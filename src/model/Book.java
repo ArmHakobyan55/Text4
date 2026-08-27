@@ -1,8 +1,7 @@
-package pacage;
+package model;
 
-public class Car {
+public class Book {
     int id = 1;
-    String flightNumber = "2";
     String airline = "2";
     String flightType = "DOMESTIC";
     int distanse = 50;
@@ -11,9 +10,37 @@ public class Car {
     int capacity = 1;
     int departureYear = 2026;
     boolean available = false;
+    String flightNumber;
+    double rating;
+    int pages;
+    int publishet;
+
+    public int getPages() {
+        return pages;
+    }
+
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
+
+    public int getPublishet() {
+        return publishet;
+    }
+
+    public void setPublishet(int publishet) {
+        this.publishet = publishet;
+    }
 
     public int getId() {
         return id;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
     }
 
     public void setId(int id) {
